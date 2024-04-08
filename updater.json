@@ -1,11 +1,11 @@
 {
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "notes": "Test version",
-  "pub_date": "2023-06-22T19:25:57Z",
+  "pub_date": "2024-04-09T19:25:57Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "",
-      "url": "https://github.com/boboshan/chordloud/releases/download/v0.1.1/Chordloud_0.1.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUDlBdk1FZ1FmWGsvQzFXenAyTTg4aGgxbUhXTjZuVzhUOGRNc3VKVDlnQlJ0ckZQbmpBdmZLUGpMRnNNeTc4em45OWhxakNQL3hxRFpidEZsQ3V5SzRyOXlDK3pWY2c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEyNTk5MjkyCWZpbGU6Q2hvcmRsb3VkXzAuMS4yX3g2NC1zZXR1cC5uc2lzLnppcApOYWR3V0RMVDlrRXc5SXhkZzFyNlZDRmh1bnNBeDA0QXpNZGdSY1hSclZjMWdES0xhTU5Kdkg2V0RyWDg4ME10REJSV0VYQjd6YUdFeVAvYWFuaUdEUT09Cg==",
+      "url": "https://github.com/boboshan/chordloud/releases/download/v0.1.2/Chordloud_0.1.2_x64-setup.exe"
     }
   }
 }
