@@ -4,7 +4,7 @@
   "pub_date": "2024-04-18T20:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUDlBdk1FZ1FmWHJ2dWZ1d2ttVUlCNE96NVl1cGFteDIwM3dYKzZMdithZ0RpemZKcWJmbXpaUnhscEFrMjd3RzV4OUI4UGVWREttTmtjOVlFbmF6c09pR2QvTnJiVWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEzODk3ODUxCWZpbGU6Q2hvcmRsb3VkXzAuMS4xX3g2NC1zZXR1cC5uc2lzLnppcAp6ZzV3bGdpeWo0OUJyTHpmSWtwRlhWQlozTmIxYXp4cHgwazdiU21MYmV2S1V0NGU5MlpPSHVEb1oxbzVPVEVnOGVDNjZEMEVsMlQ3UnAvUTdPeXVDZz09Cg==",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUDlBdk1FZ1FmWGxkU0N0bTQ0cGRhSy9YNWVxRDRGZWFhdittQzgzWi9JVTZQSlN5aHZXdWU5ZWZxbmxZVVZVUlVBUUQweitZOWl6aDBLTXJoVDMvV1pFTkk1VnhZYXdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEzODk4MjEzCWZpbGU6Q2hvcmRsb3VkXzAuMS4xX3g2NC1zZXR1cC5uc2lzLnppcApNZ3ZSQmlidzZxQnM4R3JkWCtLSGIyejA5aG13V25rY3Y0NVhEY2ZYREtHVW5xUlpsYkgyM045UXVOOGxVTk4yOGdXQk02OWtvcTFOYnVXSE9haUJEUT09Cg==",
       "url": "https://github.com/boboshan/chordloud/releases/download/v0.1.1/Chordloud_0.1.1_x64-setup.nsis.zip"
     }
   }
