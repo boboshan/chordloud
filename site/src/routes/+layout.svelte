@@ -37,6 +37,6 @@
 	<Hamburger />
 </header>
 
-<div class="m-auto px-4 pb-10 max-w-6xl sm:px-0">
+<div class="m-auto px-4 pb-10 max-w-6xl md:px-8">
 	{@render children()}
 </div>
