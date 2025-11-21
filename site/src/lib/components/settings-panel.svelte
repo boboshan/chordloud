@@ -31,7 +31,7 @@
 		uiManager.isMenuOpen ? 'left-0' : 'left--100%'
 	]}
 >
-	<div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center">
+	<div class="flex flex-col flex-wrap gap-4 justify-center sm:flex-row">
 		<label>
 			<input type="checkbox" bind:checked={userSettings.sortNotes} />
 			Sort Notes
@@ -66,17 +66,17 @@
 		</label>
 	</div>
 
-	<div class="w-full flex flex-col sm:flex-row justify-between gap-4 py-4 sm:py-6">
+	<div class="py-4 flex flex-col gap-4 w-full justify-between sm:py-6 sm:flex-row">
 		<select
 			id="midiInputSelect"
 			name="Select MIDI input port"
 			title="Select MIDI input port"
-			class="rounded bg-[#231f20] text-brand-beige p-1"
+			class="text-brand-beige p-1 rounded bg-[#231f20]"
 			value={midiManager.selectedInputName}
 			onchange={handleInputSelection}
 		>
 			<option value="">-- Select a MIDI input --</option>
-			{#each midiManager.inputs as midiInput}
+			{#each midiManager.inputs as midiInput (midiInput.id)}
 				<option value={midiInput.name}>{midiInput.name}</option>
 			{/each}
 		</select>
@@ -87,10 +87,10 @@
 				id="keySelect"
 				name="Select a key"
 				title="Select a key"
-				class="rounded bg-[#231f20] text-brand-beige p-1"
+				class="text-brand-beige p-1 rounded bg-[#231f20]"
 				bind:value={selectedKey}
 			>
-				{#each MAJOR_KEYS as key}
+				{#each MAJOR_KEYS as key (key)}
 					<option value={key}>{key}</option>
 				{/each}
 			</select>

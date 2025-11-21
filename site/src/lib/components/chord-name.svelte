@@ -46,7 +46,7 @@
 
 	let { chord, class: className, ...props } = $props();
 
-	let omission = $derived(chord.omission?.map((o: any) => o.number).join(','));
+	let omission = $derived(chord.omission?.map((o: { number: number }) => o.number).join(','));
 	let symbol = $derived(chord.type.symbols[1] ?? null);
 
 	let type = $derived.by(() => {
@@ -70,10 +70,10 @@
 <div {...props} class={['inline items-baseline font-erode', className]}>
 	{#if root}
 		<span class="font-500">{root}</span
-		>{/if}{#if quality}<span class="px-0.1em text-0.9em italic">{quality}</span
-		>{/if}{#if alterations}<sup class="text-0.8em italic font-thin">{alterations}</sup
-		>{/if}{#if omission}<sup class="text-0.8em italic font-thin">(no{omission})</sup
-		>{/if}{#if bass}<span class="px-0.1em text-0.9em font-thin opacity-50">/</span
+		>{/if}{#if quality}<span class="text-0.9em px-0.1em italic">{quality}</span
+		>{/if}{#if alterations}<sup class="text-0.8em font-thin italic">{alterations}</sup
+		>{/if}{#if omission}<sup class="text-0.8em font-thin italic">(no{omission})</sup
+		>{/if}{#if bass}<span class="text-0.9em font-thin px-0.1em opacity-50">/</span
 		><span class="text-0.9em font-thin opacity-50">{bass}</span>
 	{/if}
 </div>

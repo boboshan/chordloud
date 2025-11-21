@@ -28,17 +28,15 @@
 </svelte:head>
 
 <header
-	class="w-full px-4 py-6 sm:(h-fit w-fit py-8 ma) md:(h-200px w-fit py-8 ma)
-  flex flex-row justify-between items-center gap-1 sm:(justify-center gap-2)"
+	class="px-4 py-4 flex flex-row gap-1 w-full items-center justify-between md:(m-auto h-200px w-fit) sm:(m-auto py-8 gap-2 h-fit w-fit justify-center)"
 >
 	<Logo />
-
-	<h1 class="text-9 sm:text-18 md:text-24 pr-2 font-telma font-500 block line-height-none">
+	<h1 class="text-9 line-height-none font-500 font-telma pr-2 block md:text-24 sm:text-18">
 		<a href="/"><span>Chord</span><span class="text-brand-pink">Loud</span></a>
 	</h1>
 	<Hamburger />
 </header>
 
-<div class="px-4 pb-4 md:px-8 max-w-6xl m-auto">
+<div class="m-auto px-4 pb-10 max-w-6xl sm:px-0">
 	{@render children()}
 </div>

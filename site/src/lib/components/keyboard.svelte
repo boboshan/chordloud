@@ -118,12 +118,12 @@
 </script>
 
 <div
-	class="w-full flex justify-center items-center select-none overflow-hidden"
+	class="flex w-full select-none items-center justify-center overflow-hidden"
 	bind:clientWidth={width}
 >
-	<div class="relative w-full" style="height: {containerHeight}px;">
-		<div class="flex h-full gap-[1px]">
-			{#each keys.whites as key}
+	<div class="w-full relative" style="height: {containerHeight}px;">
+		<div class="flex gap-[1px] h-full">
+			{#each keys.whites as key (key.midi)}
 				<button
 					class={[
 						'flex-1 bg-[#f9f4da] rounded-b-sm flex items-end justify-center pb-2 transition-colors duration-75 relative',
@@ -131,18 +131,18 @@
 					]}
 					onmousedown={() => toggleNote(key.name)}
 				>
-					<span class="text-[10px] text-gray-700 pointer-events-none mb-1">{key.name}</span>
+					<span class="text-[10px] text-gray-700 mb-1 pointer-events-none">{key.name}</span>
 				</button>
 			{/each}
 		</div>
 
 		<!-- Black Keys Container -->
-		<div class="absolute inset-0 pointer-events-none">
-			{#each keys.blacks as key}
+		<div class="pointer-events-none inset-0 absolute">
+			{#each keys.blacks as key (key.midi)}
 				<button
 					title={key.name}
 					class={[
-						'absolute h-[60%] bg-[#231f20] border-b border-x border-[#231f20] rounded-b-sm transition-colors duration-75 pointer-events-auto',
+						'absolute h-[60%] bg-[#231f20] hover:bg-[#2c292a] border-b border-x border-[#231f20] rounded-b-sm transition-colors duration-75 pointer-events-auto',
 						isNoteActive(key.midi) ? 'bg-[#fcba28] hover:bg-[#e6a925]' : 'hover:bg-[#242122]'
 					]}
 					style="left: {key.left}%; width: {0.6 *

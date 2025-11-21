@@ -12,8 +12,8 @@
 	let selectedKey = $state<string>('C');
 
 	const mobile = new MediaQuery('(max-width: 640px)');
-	let staffScaleFactor = $derived(mobile.current ? 1.2 : 1.4);
-	let staffHeight = $derived(mobile.current ? 220 : 250);
+	let staffScaleFactor = $derived(mobile.current ? 1 : 1.3);
+	let staffHeight = $derived(mobile.current ? 180 : 250);
 
 	let userSettings = $state({
 		sortNotes: true,
@@ -63,9 +63,9 @@
 
 <SettingsPanel bind:userSettings bind:selectedKey />
 
-<div class="w-full grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-5">
+<div class="gap-4 grid grid-cols-1 w-full md:gap-6 lg:grid-cols-5">
 	{#if userSettings.showStave}
-		<div class="lg:(col-span-2 h-320px) card">
+		<div class="card lg:(col-span-2 h-300px)">
 			<Staff
 				notes={sortedNotes}
 				key={selectedKey}
@@ -77,7 +77,7 @@
 
 	<div
 		class={[
-			'card relative lg:col-span-3 font-erode h-150px md:h-220px lg:h-320px flex justify-center items-center gap-0 overflow-hidden',
+			'card relative lg:col-span-3 font-erode h-150px md:h-220px lg:h-300px flex justify-center items-center gap-0 overflow-hidden',
 			userSettings.showStave ? 'lg:col-span-3' : 'lg:col-span-5'
 		]}
 	>
@@ -85,8 +85,8 @@
 	</div>
 
 	{#if userSettings.showKeyboard}
-		<div class="lg:col-span-5 card">
-			<Keyboard bind:activeNotes={midiManager.activeNotes} maxOctaves={3} />
+		<div class="card lg:col-span-5">
+			<Keyboard bind:activeNotes={midiManager.activeNotes} minOctaves={2} maxOctaves={3} />
 		</div>
 	{/if}
 </div>

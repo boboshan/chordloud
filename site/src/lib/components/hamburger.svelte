@@ -3,7 +3,7 @@
 </script>
 
 <button
-	class="flex flex-col justify-center items-center w-8 h-8 gap-1.5 bg-transparent border-none cursor-pointer z-50 sm:hidden"
+	class="border-none bg-transparent flex flex-col gap-1.5 h-8 w-8 cursor-pointer items-center justify-center z-50 sm:hidden"
 	onclick={() => uiManager.toggleMenu()}
 	aria-label="Toggle menu"
 >

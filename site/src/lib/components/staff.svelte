@@ -9,7 +9,7 @@
 		BarlineType,
 		Modifier,
 		StaveText
-	} from 'vexflow';
+	} from 'vexflow/bravura';
 	import { Note } from 'qord';
 
 	let {
@@ -48,7 +48,7 @@
 
 		const staveWidth = width / scaleFactor;
 		const staveX = 0;
-		const staveY = 10;
+		const staveY = 15;
 		const bassStaveY = staveY + 60; // Distance between staves
 
 		// --- Treble Stave ---
@@ -193,6 +193,6 @@
 	}
 </script>
 
-<div class="w-full h-full" bind:clientWidth={width} bind:clientHeight={height}>
+<div class="h-full w-full" bind:clientWidth={width} bind:clientHeight={height}>
 	<div {@attach renderStaff}></div>
 </div>

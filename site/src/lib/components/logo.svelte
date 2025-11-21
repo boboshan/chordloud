@@ -20,7 +20,7 @@
 		href?: string;
 		onclick?: (event: MouseEvent) => void;
 		class?: string;
-		[key: string]: any;
+		[key: string]: unknown;
 	} = $props();
 
 	const keys = Object.keys(icons);

@@ -1,10 +1,19 @@
 import devtoolsJson from 'vite-plugin-devtools-json';
 import { defineConfig } from 'vitest/config';
 import { sveltekit } from '@sveltejs/kit/vite';
-import UnoCSS from 'unocss/vite'
+import { visualizer } from 'rollup-plugin-visualizer';
+import UnoCSS from 'unocss/vite';
 
 export default defineConfig({
-	plugins: [sveltekit(), devtoolsJson(), UnoCSS()],
+	plugins: [
+		sveltekit(),
+		devtoolsJson(),
+		UnoCSS(),
+		visualizer({
+			emitFile: true,
+			filename: 'stats.html'
+		})
+	],
 	test: {
 		expect: { requireAssertions: true },
 		projects: [

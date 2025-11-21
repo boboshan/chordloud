@@ -1,4 +1,4 @@
-import { WebMidi, type Input } from 'webmidi';
+import { WebMidi, type Input, type NoteMessageEvent } from 'webmidi';
 
 export class MidiManager {
 	activeNotes = $state<string[]>([]);
@@ -40,14 +40,14 @@ export class MidiManager {
 		}
 	}
 
-	onNoteOn = (e: any) => {
+	onNoteOn = (e: NoteMessageEvent) => {
 		const noteName = e.note.identifier;
 		if (!this.activeNotes.includes(noteName)) {
 			this.activeNotes = [...this.activeNotes, noteName];
 		}
 	};
 
-	onNoteOff = (e: any) => {
+	onNoteOff = (e: NoteMessageEvent) => {
 		const noteName = e.note.identifier;
 		this.activeNotes = this.activeNotes.filter((n) => n !== noteName);
 	};
