@@ -1,0 +1,23 @@
+/* :root {
+
+} */
+
+html {
+	@apply bg-brand-charcoal text-brand-beige scroll-smooth;
+}
+
+html:not(.screen-arch),
+html:not(.screen-arch) body {
+	height: 100%;
+}
+
+html.screen-arch,
+html.screen-arch body {
+	min-height: 100%;
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: 100%;
+	@apply overscroll-none font-sans antialiased font-synthesis-none;
+}
