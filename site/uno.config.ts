@@ -14,7 +14,7 @@ export default defineConfig({
         telma: [
           {
             name: 'Telma',
-            weights: ['100', '200', '300', '400', '500'],
+            weights: ['500'],
             italic: false
           },
           {
@@ -25,7 +25,7 @@ export default defineConfig({
         erode: [
           {
             name: 'Erode',
-            weights: ['100', '200', '300', '400', '500'],
+            weights: ['300', '400', '500', '301', '401', '501'],
             italic: false
           },
           {
