@@ -126,7 +126,7 @@
 			{#each keys.whites as key (key.midi)}
 				<button
 					class={[
-						'flex-1 bg-[#f9f4da] rounded-b-sm flex items-end justify-center pb-2 transition-colors duration-75 relative',
+						'flex-1 bg-[#f9f4da] rounded-b-sm flex items-end justify-center pb-2 transition-colors duration-75 relative touch-manipulation',
 						isNoteActive(key.midi) ? 'bg-[#fcba28] hover:bg-[#e6a925]' : 'hover:bg-[#e6e1ca]'
 					]}
 					onmousedown={() => toggleNote(key.name)}
@@ -142,7 +142,7 @@
 				<button
 					title={key.name}
 					class={[
-						'absolute h-[60%] bg-[#231f20] hover:bg-[#2c292a] border-b border-x border-[#231f20] rounded-b-sm transition-colors duration-75 pointer-events-auto',
+						'absolute h-[60%] bg-[#231f20] hover:bg-[#2c292a] border-b border-x border-[#231f20] rounded-b-sm transition-colors duration-75 pointer-events-auto touch-manipulation',
 						isNoteActive(key.midi) ? 'bg-[#fcba28] hover:bg-[#e6a925]' : 'hover:bg-[#242122]'
 					]}
 					style="left: {key.left}%; width: {0.6 *
